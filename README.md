@@ -34,3 +34,35 @@ Submit an ingestion job.
   "ids": [1, 2, 3, 4, 5],
   "priority": "HIGH"
 }
+
+## This is the response in ThunderClient for GET Request on https://loop-ai-2210990373.onrender.com/status/49c525e0-e28e-4779-bdc6-1e0d40233db5
+{
+  "ingestion_id": "49c525e0-e28e-4779-bdc6-1e0d40233db5",
+  "status": "completed",
+  "batches": [
+    {
+      "batch_id": "80af75f7-8eac-4eb5-8856-58524ca95e45",
+      "ids": [
+        1,
+        2,
+        3
+      ],
+      "status": "completed",
+      "ingestion_id": "49c525e0-e28e-4779-bdc6-1e0d40233db5"
+    },
+    {
+      "batch_id": "af3b818c-66d0-4f58-9dc9-545fa1c45a13",
+      "ids": [
+        4,
+        5
+      ],
+      "status": "completed",
+      "ingestion_id": "49c525e0-e28e-4779-bdc6-1e0d40233db5"
+    }
+  ]
+}
+
+## This is the response in ThunderClient for POST Request on https://loop-ai-2210990373.onrender.com/ingest/
+{
+  "ingestion_id": "ae226f90-eb3e-487a-8dad-ee7f467f3937"
+}
